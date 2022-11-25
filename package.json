@@ -4,7 +4,7 @@
 	"description": "Chess engine for fun",
 	"main": "./build/index.js",
 	"scripts": {
-		"lint": "eslint ./src/index.ts",
+		"lint": "eslint ./src/*.ts",
 		"dev": "nodemon src/index.ts",
 		"build": "tsc --project ."
 	},
