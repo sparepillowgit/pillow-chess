@@ -2,7 +2,7 @@
 	"name": "@sparepillowgit/pillow-chess",
 	"version": "1.0.0",
 	"description": "Chess engine for fun",
-	"main": "index.js",
+	"main": "./build/index.js",
 	"scripts": {
 		"lint": "eslint ./src/index.ts",
 		"dev": "nodemon src/index.ts",
