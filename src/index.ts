@@ -1,5 +1,5 @@
-var board = require('./board');
-var ascii = require('./ascii');
+const board = require('./board');
+const ascii = require('./ascii');
 
 module.exports = {
     board: board,
