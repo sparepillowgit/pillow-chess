@@ -1,4 +1,5 @@
 type Piece = {
-    type?: 'rook' | 'knight' | 'bishop' | 'queen' | 'king' | 'pawn';
-    color?: 'white' | 'black';
+    id: number;
+    type: 'rook' | 'knight' | 'bishop' | 'queen' | 'king' | 'pawn';
+    color: 'white' | 'black';
 }
