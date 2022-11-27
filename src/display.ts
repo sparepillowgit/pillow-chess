@@ -3,6 +3,7 @@ function parseBoardState(board: Board, options: {format: string}): string[] {
 
     for (const file in board.squares) {
         for (const rank in board.squares[file]) {
+            // Insert rank label.
             if (lines[parseInt(rank) - 1] === undefined) lines[parseInt(rank) - 1] = ` ${rank} | `;
 
             if (board.squares[file][rank].piece) {
@@ -15,6 +16,7 @@ function parseBoardState(board: Board, options: {format: string}): string[] {
                         break;
                 }
 
+                // Insert file separator.
                 lines[parseInt(rank) - 1] += ' | ';
             } else {
                 lines[parseInt(rank) - 1] += '  | ';
@@ -23,13 +25,12 @@ function parseBoardState(board: Board, options: {format: string}): string[] {
     }
 
     // Insert file labels.
-    lines.splice(0 , 0, '     a   b   c   d   e   f   g   h  ');
+    lines.unshift('     a   b   c   d   e   f   g   h  ');
 
     // Insert rank separators.
-    for (let i = 0; i < lines.length; i++) {
-        lines.splice(i + 1, 0, '   |---|---|---|---|---|---|---|---|');
-        i++;
-    }
+    lines.forEach((line: string, index: number) => {
+        lines.splice(((index + 1) + ((index * 1) + 1)) - 1, 0, '   +---+---+---+---+---+---+---+---+');
+    });
 
     return lines.reverse();
 }
