@@ -1,5 +1,5 @@
 interface Square {
-	piece?: {id: string};
+	piece?: Piece;
 }
 
 interface Board {
