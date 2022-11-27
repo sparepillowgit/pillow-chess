@@ -3,21 +3,21 @@ interface Square {
 }
 
 interface Board {
-	squares: Record<string, Record<string, Square>>
+	squares: Record<string, Record<number, Square>>
 }
 
-function generateSquares(): Record<string, Record<string, Square>> {
-	const squares: Record<string, Record<string, Square>> = {};
-	const ranks: Record<string, Square> = {};
+function generateSquares(): Record<string, Record<number, Square>> {
+	const squares: Record<string, Record<number, Square>> = {};
+	const ranks: Record<number, Square> = {};
 
 	// Create ranks to append to board[file]. I'm doing this here so
 	// I don't have to run a nested for-loop for each file.
 
-	['1', '2', '3', '4', '5', '6', '7', '8'].forEach(rank => {
+	[1, 2, 3, 4, 5, 6, 7, 8].forEach((rank: number) => {
 		ranks[rank] = {};
 	});
 
-	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].forEach(file => {
+	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].forEach((file: string) => {
 		squares[file] = ranks;
 	});
 
@@ -33,10 +33,16 @@ module.exports = {
 		return board;
 	},
 	newGame: function (board: Board, options: {rules: string}): Board {
+		// Import rule file.
+		const rules = require(`./rules/${options.rules}`);
+
 		// Clear the board.
 		board.squares = generateSquares();
 
-		// Place pieces on the board.
+		// Place pieces on the board
+		rules.pieces.forEach((piece: Piece) => {
+			console.log(piece);
+		})
 
 		return board;
 	}
