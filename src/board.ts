@@ -1,5 +1,5 @@
 interface Square {
-	occupyingPieceId: number | null;
+	piece?: {id: string};
 }
 
 interface Board {
@@ -14,7 +14,7 @@ function generateSquares(): Record<string, Record<string, Square>> {
 	// I don't have to run a nested for-loop for each file.
 
 	['1', '2', '3', '4', '5', '6', '7', '8'].forEach(rank => {
-		ranks[rank] = {occupyingPieceId: null};
+		ranks[rank] = {};
 	});
 
 	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].forEach(file => {
@@ -29,6 +29,14 @@ module.exports = {
 		const board: Board = {
 			squares: generateSquares()
 		}
+
+		return board;
+	},
+	newGame: function (board: Board, options: {rules: string}): Board {
+		// Clear the board.
+		board.squares = generateSquares();
+
+		// Place pieces on the board.
 
 		return board;
 	}
