@@ -49,10 +49,9 @@ module.exports = {
 						id: 1,
 						type: piece,
 						value: rules.pieces[color][piece].value,
-						color: color,
+						symbol: rules.pieces[color][piece].symbol,
+						color: color
 					}
-
-					console.log(`Placed ${color} ${piece} on ${position.file}${position.rank}.`);
 				});
 			}
 		}

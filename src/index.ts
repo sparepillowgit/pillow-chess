@@ -1,7 +1,7 @@
 const board = require('./board');
-const ascii = require('./ascii');
+const display = require('./display');
 
 module.exports = {
     board: board,
-    ascii: ascii
+    display: display
 };

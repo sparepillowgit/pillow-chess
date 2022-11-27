@@ -6,4 +6,5 @@ let boardState = pchess.board.create();
 // Place pieces on the board.
 boardState = pchess.board.newGame(boardState, {rules: 'standard'});
 
-console.log(boardState);
+// Print the ASCII board to the console.
+console.log(pchess.display.ascii(boardState));

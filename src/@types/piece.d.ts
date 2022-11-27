@@ -3,4 +3,5 @@ type Piece = {
     type: string;
     value: number;
     color: string;
+    symbol: {unicode: string; ascii: string};
 }
