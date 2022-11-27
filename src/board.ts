@@ -8,7 +8,7 @@ interface Board {
 
 function generateSquares(): Record<string, Record<number, Square>> {
 	const squares: Record<string, Record<number, Square>> = {};
-	
+
 	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'].forEach((file: string) => {
 		const ranks: Record<number, Square> = {};
 
@@ -52,7 +52,7 @@ module.exports = {
 						color: color,
 					}
 
-					console.log('placing at :' + position.file + position.rank);
+					console.log(`Placed ${color} ${piece} on ${position.file}${position.rank}.`);
 				});
 			}
 		}

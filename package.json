@@ -6,6 +6,7 @@
 	"scripts": {
 		"lint": "eslint ./src/*.ts",
 		"dev": "nodemon src/index.ts",
+		"test": "tsc --project . && node ./build/test_script.js",
 		"build": "tsc --project ."
 	},
 	"repository": {

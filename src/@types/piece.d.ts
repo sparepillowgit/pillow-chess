@@ -1,6 +1,6 @@
 type Piece = {
     id: number;
-    type: 'rook' | 'knight' | 'bishop' | 'queen' | 'king' | 'pawn';
+    type: string;
     value: number;
-    color: 'white' | 'black';
+    color: string;
 }
