@@ -1,6 +1,6 @@
-const boardModule = require('./board');
-const pieceModule = require('./piece');
-const displayModule = require('./display');
+var boardModule = require('./board');
+var pieceModule = require('./piece');
+var displayModule = require('./display');
 
 module.exports = class Game {
     public constructor(private board: Board) {

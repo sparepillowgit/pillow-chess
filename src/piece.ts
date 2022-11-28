@@ -1,14 +1,8 @@
-function parseNotation(notation: string): parsedNotation {
-    const parsedNotation: parsedNotation = {};
-
-    return parsedNotation;
-}
+var pngModule = require('./png');
 
 module.exports = {
 	movePiece: function (board: Board, notation: string): Board {
-        const parsedNotation = parseNotation(notation);
-
-        console.log('parsedNotation');
+        const parsedNotation = pngModule.parseNotation(notation);
 	
 		return board;
 	},
