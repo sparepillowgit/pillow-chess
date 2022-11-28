@@ -1,6 +1,6 @@
 # Pillow Chess
 
-You'll find this just-for-fun chess engine is riddled with suboptimal code as this was an exercise in problem solving, which meant no Googling for optimal solutions.
+A just-for-fun JS chess library riddled with suboptimal code. This was an exercise in problem solving, which meant no Googling for optimal solutions.
 
 ## Installation
 
@@ -16,17 +16,17 @@ const pchess = require('pillow-chess');
 
 ###### Create an empty board:
 ```
-let boardState = pchess.board.create();
+const Game = require('./index');
 ```
 
 ###### Place pieces using standard chess rules:
 ```
-boardState = pchess.board.newGame(boardState, {rules: 'standard'});
+game.newGame({rules: 'standard'});
 ```
 
 ###### Move a piece:
 ```
-boardState = pchess.piece.movePiece(boardState, {move: 'Nf3'});
+game.movePiece('Nf3');
 ```
 
 ## ASCII & Unicode
@@ -35,12 +35,12 @@ You can generate an ASCII or Unicode output of a board state:
 
 ###### ASCII:
 ```
-let ascii = pchess.display.ascii(boardState);
+let ascii = game.printASCII();
 ```
 
 ###### Unicode (experimental):
 ```
-let unicode = pchess.display.unicode(boardState);
+let unicode = game.printUnicode();
 ```
 
 ###### Example output:

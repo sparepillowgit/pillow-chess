@@ -36,7 +36,7 @@ function parseBoardState(board: Board, options: {format: string}): string[] {
 }
 
 module.exports = {
-    ascii: function (board: Board): string {
+    ASCII: function (board: Board): string {
         let output: string[] = parseBoardState(board, {format: 'ascii'});
 
         return output.join('\n');

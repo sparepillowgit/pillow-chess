@@ -1,10 +1,13 @@
-const pchess = require('./index');
+const Game = require('./index');
 
-// Create an empty board.
-let boardState = pchess.board.create();
+// Create a new game instance. This generates an empty board.
+const game = new Game;
 
-// Place pieces on the board.
-boardState = pchess.board.newGame(boardState, {rules: 'standard'});
+// Start a new game with the default rules.
+game.newGame({rules: 'standard'});
 
 // Print the ASCII board to the console.
-console.log(pchess.display.ascii(boardState));
+console.log(game.printASCII());
+
+// Move the e2 pawn.
+game.movePiece('e4');

@@ -1,11 +1,3 @@
-interface Square {
-	piece?: Piece;
-}
-
-interface Board {
-	squares: Record<string, Record<number, Square>>
-}
-
 function generateSquares(): Record<string, Record<number, Square>> {
 	const squares: Record<string, Record<number, Square>> = {};
 
@@ -23,19 +15,18 @@ function generateSquares(): Record<string, Record<number, Square>> {
 }
 
 module.exports = {
-	create: function (): Board {
+	clearBoard: function(): Board {
 		const board: Board = {
-			squares: generateSquares()
+			squares: generateSquares(),
+			moves: [],
+			turn: 'white'
 		}
 
 		return board;
 	},
-	newGame: function (board: Board, options: {rules: string}): Board {
+	newGame: function(board: Board, settings: {rules: string}): Board {
 		// Import rules file.
-		const rules = require(`./rules/${options.rules}`);
-
-		// Clear the board.
-		board.squares = generateSquares();
+		const rules = require(`./rules/${settings.rules}`);
 
 		// Check sides.
 		for (const color in rules.pieces) {
