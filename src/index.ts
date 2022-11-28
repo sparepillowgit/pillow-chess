@@ -3,9 +3,7 @@ var pieceModule = require('./piece');
 var displayModule = require('./display');
 
 module.exports = class Game {
-    public constructor(private board: Board) {
-        this.board = boardModule.clearBoard();
-    }
+    public constructor(private board: Board = boardModule.clearBoard()) {}
 
     // Clear the board.
     public clearBoard(): void {

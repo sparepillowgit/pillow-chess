@@ -8,13 +8,11 @@ interface Board {
 	turn: 'white' | 'black';
 }
 
+interface parsedMove {
+	file: string;
+	rank: rank;
+}
+
 interface parsedNotation {
-	from?: {
-		file: number,
-		rank: string
-	},
-	to?: {
-		file: number,
-		rank: string
-	}
+	[key?: string]: parsedMove;
 }
