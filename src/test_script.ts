@@ -1,7 +1,7 @@
-const Game = require('./index');
+const pchess = require('./index');
 
 // Create a new game instance. This generates an empty board.
-const game = new Game;
+const game = pchess.Game;
 
 // Start a new game with the default rules.
 game.newGame({rules: 'standard'});
