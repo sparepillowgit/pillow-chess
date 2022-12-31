@@ -14,9 +14,9 @@ $ npm install pillow-chess
 const pchess = require('pillow-chess');
 ```
 
-###### Create an empty board:
+###### Initialise an empty game:
 ```
-const Game = require('./index');
+const game = pchess.Game;
 ```
 
 ###### Place pieces using standard chess rules:
