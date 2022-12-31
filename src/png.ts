@@ -1,9 +1,6 @@
-var boardGrid = require('./lookup_tables/board_grid');
+var boardGrid = require('../lookup_tables/board_grid');
 
 const parsePawnMove = (board: Board, notation: string): parsedNotation => {
-	console.log(board.turn);
-	console.log(boardGrid);
-
 	const parsedNotation: parsedNotation = {
 		from: {
 			file: 'a',
@@ -28,8 +25,6 @@ module.exports = {
 				parsedNotation = parsePawnMove(board, notation);
 				break;
 		}
-
-		console.log(parsedNotation);
 
 		return parsedNotation;
 	}

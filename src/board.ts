@@ -26,7 +26,7 @@ module.exports = {
 	},
 	newGame: function(board: Board, settings: {rules: string}): Board {
 		// Import rules file.
-		const rules = require(`./rules/${settings.rules}`);
+		const rules = require(`../rules/${settings.rules}`);
 
 		// Check sides.
 		for (const color in rules.pieces) {

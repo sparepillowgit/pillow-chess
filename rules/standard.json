@@ -1,0 +1,149 @@
+{
+    "name": "standard",
+    "pieces": {
+        "white": {
+            "rook": {
+                "value": 5,
+                "symbol": {
+                    "unicode": "♖",
+                    "ascii": "R"
+                },
+                "positions": [
+                    { "file": "a", "rank": 1 },
+                    { "file": "h", "rank": 1 }
+                ]
+            },
+            "knight": {
+                "value": 3,
+                "symbol": {
+                    "unicode": "♘",
+                    "ascii": "N"
+                },
+                "positions": [
+                    { "file": "b", "rank": 1 },
+                    { "file": "g", "rank": 1 }
+                ]
+            },
+            "bishop": {
+                "value": 3,
+                "symbol": {
+                    "unicode": "♗",
+                    "ascii": "B"
+                },
+                "positions": [
+                    { "file": "c", "rank": 1 },
+                    { "file": "f", "rank": 1 }
+                ]
+            },
+            "queen": {
+                "value": 9,
+                "symbol": {
+                    "unicode": "♕",
+                    "ascii": "Q"
+                },
+                "positions": [
+                    { "file": "d", "rank": 1 }
+                ]
+            },
+            "king": {
+                "value": 0,
+                "symbol": {
+                    "unicode": "♔",
+                    "ascii": "K"
+                },
+                "positions": [
+                    { "file": "e", "rank": 1 }
+                ]
+            },
+            "pawn": {
+                "value": 1,
+                "symbol": {
+                    "unicode": "♙",
+                    "ascii": "P"
+                },
+                "positions": [
+                    { "file": "a", "rank": 2 },
+                    { "file": "b", "rank": 2 },
+                    { "file": "c", "rank": 2 },
+                    { "file": "d", "rank": 2 },
+                    { "file": "e", "rank": 2 },
+                    { "file": "f", "rank": 2 },
+                    { "file": "g", "rank": 2 },
+                    { "file": "h", "rank": 2 }
+                ]
+            }
+        },
+        "black": {
+            "rook": {
+                "value": 5,
+                "symbol": {
+                    "unicode": "♜",
+                    "ascii": "r"
+                },
+                "positions": [
+                    { "file": "a", "rank": 8 },
+                    { "file": "h", "rank": 8 }
+                ]
+            },
+            "knight": {
+                "value": 3,
+                "symbol": {
+                    "unicode": "♞",
+                    "ascii": "n"
+                },
+                "positions": [
+                    { "file": "b", "rank": 8 },
+                    { "file": "g", "rank": 8 }
+                ]
+            },
+            "bishop": {
+                "value": 3,
+                "symbol": {
+                    "unicode": "♝",
+                    "ascii": "b"
+                },
+                "positions": [
+                    { "file": "c", "rank": 8 },
+                    { "file": "f", "rank": 8 }
+                ]
+            },
+            "queen": {
+                "value": 9,
+                "symbol": {
+                    "unicode": "♛",
+                    "ascii": "q"
+                },
+                "positions": [
+                    { "file": "d", "rank": 8 }
+                ]
+            },
+            "king": {
+                "value": 0,
+                "symbol": {
+                    "unicode": "♚",
+                    "ascii": "k"
+                },
+                "positions": [
+                    { "file": "e", "rank": 8 }
+                ]
+            },
+            "pawn": {
+                "value": 1,
+                "symbol": {
+                    "unicode": "♟︎",
+                    "ascii": "p"
+                },
+                "positions": [
+                    { "file": "a", "rank": 7 },
+                    { "file": "b", "rank": 7 },
+                    { "file": "c", "rank": 7 },
+                    { "file": "d", "rank": 7 },
+                    { "file": "e", "rank": 7 },
+                    { "file": "f", "rank": 7 },
+                    { "file": "g", "rank": 7 },
+                    { "file": "h", "rank": 7 }
+                ]
+            }
+        }
+    }
+}
