@@ -9,5 +9,8 @@ game.newGame({rules: 'standard'});
 // Print the ASCII board to the console.
 console.log(game.printASCII());
 
+// Print the Unicode board to the console.
+console.log(game.printUnicode());
+
 // Move the e2 pawn.
 game.movePiece('e4');
