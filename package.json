@@ -1,5 +1,5 @@
 {
-	"name": "@sparepillowgit/pillow-chess",
+	"name": "pillow-chess",
 	"version": "1.0.0",
 	"description": "Chess engine for fun",
 	"main": "./build/index.js",
