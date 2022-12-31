@@ -5,7 +5,7 @@ A just-for-fun JS chess library riddled with suboptimal code. This was an exerci
 ## Installation
 
 ```
-$ npm install @sparepillowgit/pillow-chess
+$ npm install pillow-chess
 ```
 
 ## Usage
