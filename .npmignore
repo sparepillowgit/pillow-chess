@@ -1,6 +1,9 @@
 # Source directory
 src/
 
+# Git
+.gitattributes
+
 # TypeScript
 tsconfig.json
 
