@@ -13,8 +13,8 @@
 		"type": "git",
 		"url": "git+https://github.com/sparepillowgit/pillow-chess.git"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "sparepillowgit",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/sparepillowgit/pillow-chess/issues"
 	},
