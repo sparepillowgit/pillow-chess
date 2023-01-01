@@ -1,6 +1,6 @@
 {
 	"name": "pillow-chess",
-	"version": "1.0.0-alpha.0",
+	"version": "0.1.0-alpha",
 	"description": "Chess engine for fun",
 	"main": "./build/index.js",
 	"scripts": {
@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/sparepillowgit/pillow-chess/issues"
 	},
-	"homepage": "https://github.com/sparepillowgit/pillow-chess#readme",
+	"homepage": "https://sparepillowgit.github.io/pillow-chess/",
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.44.0",
 		"@typescript-eslint/parser": "^5.44.0",
