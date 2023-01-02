@@ -13,7 +13,8 @@ console.log(game.printASCII());
 console.log(game.printUnicode());
 
 // Move the e2 pawn to e5.
-game.movePiece('e5');
+game.movePiece('e2e5');
 
 // Print the Unicode board to the console again to see the move.
 console.log(game.printUnicode());
+console.log(game.board);

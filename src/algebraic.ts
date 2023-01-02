@@ -1,16 +1,18 @@
-function parseFile(file: string): number {
+// Pillow Chess uses a variation of long algebraic notation to meet UCI standards.
+
+function fileToInt(file: string): number {
 	return file.charCodeAt(0) - 96;
 }
 
 module.exports = {
-	parseNotation: function(board: Board, notation: string): parsedNotation {
+	parseLongUCI: function(notation: string): parsedNotation {
 		const parsedNotation: parsedNotation = {
 			from: {
-				file: parseFile('b'),
+				file: 'b',
 				rank: 2
 			},
 			to: {
-				file: parseFile('b'),
+				file: 'b',
 				rank: 3
 			}
 		};
