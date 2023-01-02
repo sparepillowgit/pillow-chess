@@ -9,10 +9,10 @@ interface Board {
 }
 
 interface parsedMove {
-	file: string;
-	rank: rank;
+	file: number;
+	rank: number;
 }
 
 interface parsedNotation {
-	[key?: string]: parsedMove;
+	[key?: {}]: parsedMove;
 }

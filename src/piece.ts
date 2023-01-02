@@ -1,8 +1,11 @@
-var pngModule = require('./png');
+var algebraicModule = require('./algebraic');
+var pawnParser = require('./move_parsers/pawn_parser');
 
 module.exports = {
 	movePiece: function (board: Board, notation: string): Board {
-        const parsedNotation = pngModule.parseNotation(board, notation);
+        const parsedNotation = algebraicModule.parseNotation(board, notation);
+
+		console.log(parsedNotation);
 	
 		return board;
 	},
