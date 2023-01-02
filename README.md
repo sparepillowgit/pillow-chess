@@ -24,9 +24,9 @@ const game = pchess.Game;
 game.newGame({rules: 'standard'});
 ```
 
-###### Move a piece:
+###### Move a piece using long algebraic notation:
 ```
-game.movePiece('Nf3');
+game.movePiece('e2e5');
 ```
 
 ## ASCII & Unicode

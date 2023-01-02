@@ -1,11 +1,11 @@
-// Pillow Chess uses a variation of long algebraic notation to meet UCI standards.
+// Pillow Chess uses long algebraic notation (LAN).
 
 function fileToInt(file: string): number {
 	return file.charCodeAt(0) - 96;
 }
 
 module.exports = {
-	parseLongUCI: function(notation: string): parsedNotation {
+	parseLAN: function(notation: string): parsedNotation {
 		const parsedNotation: parsedNotation = {
 			from: {
 				file: 'b',
