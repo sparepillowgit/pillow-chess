@@ -26,7 +26,7 @@ game.newGame({rules: 'standard'});
 
 ###### Move a piece using long algebraic notation:
 ```
-game.movePiece('e2e5');
+game.movePiece('e2e4');
 ```
 
 ## ASCII & Unicode
