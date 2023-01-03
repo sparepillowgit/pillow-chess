@@ -9,3 +9,6 @@ tsconfig.json
 
 # ESLint
 .eslintrc.json
+
+# Development
+build/test_script.js
