@@ -1,6 +1,6 @@
 {
 	"name": "pillow-chess",
-	"version": "0.1.0-alpha",
+	"version": "1.0.0",
 	"description": "Chess engine for fun",
 	"main": "./build/index.js",
 	"scripts": {
